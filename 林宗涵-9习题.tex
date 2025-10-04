@@ -1,0 +1,80 @@
+\section{习题9}
+
+\newpage
+\subsection{9.1}
+范德瓦耳斯方程的另一种推导方法是作平均场近似。设气体的哈密顿量为
+$$H = \sum_{i=1}^{N} \frac{p_i^2}{2m} + \sum_{i<j} \phi(r_{ij}),$$
+今假设第 $i$ 个分子所受其他分子的相互作用可以用平均场 $\phi_{\text{mf}}(r)$ 来近似表达，即 $H$ 近似用下列平均场哈密顿量代替：
+$$H_{\text{mf}} = \sum_{i=1}^{N} \left( \frac{p_i^2}{2m} + \phi_{\text{mf}}(r_i) \right).$$
+现作为对平均场的进一步简化，假设 $\phi_{\text{mf}}(r)$ 取下列形式：
+$$\phi_{\text{mf}}(r) = 
+\begin{cases} 
+\infty, & r < r_0, \\
+\Phi, & r \geq r_0,
+\end{cases}$$
+其中 $\Phi$ 是一常数。上述互作用势相当于直径为 $r_0$ 的刚球，在 $r > r_0$ 时互作用势为常数。
+
+(i) 证明正则系统的配分函数为
+$$Z_N = \frac{1}{N!} \left[ \frac{1}{h^3} \left( \frac{2\pi m}{\beta} \right)^{3/2} (V - V_0) e^{-\beta \Phi} \right]^N.$$
+
+提示：$\int e^{-\beta \phi_{\text{mf}}(r)} d^3 r = (V - V_0) e^{-\beta \Phi}, V_0$ 代表由于刚球不可入，在空间积分时应从总体积中扣除的部分。
+
+(ii) 令 $V_0 \equiv Nb, \Phi \equiv \frac{N^2}{V} a$，证明由上述 $Z_N$ 计算的压强遵从范德瓦耳斯方程。
+
+\newpage
+\subsection{9.2}
+伊辛模型的哈密顿量为
+$$H = -J \sum_{\langle i,j \rangle} s_i s_j - \mu \mathcal{H} \sum_i s_i,$$
+在平均场近似下（即公式（9.1.10）与（9.1.11）），证明正则系统的配分函数为公式（9.1.14）
+$$Z_N = \left[ 2 \cosh \left( \frac{\mu \mathcal{H}}{kT} + \frac{zJ}{kT} \bar{s} \right) \right]^N,$$
+以及确定 $\bar{s}$ 的自洽方程为公式（9.1.17）
+$$\bar{s} = \tanh \left( \frac{\mu \mathcal{H}}{kT} + \frac{zJ}{kT} \bar{s} \right).$$
+
+\newpage
+\subsection{9.3}
+证明伊辛模型在平均场近似下的临界指数为 $\beta = \frac{1}{2}$, $\alpha = 0, \gamma = 1, \delta = 3$.
+
+\newpage
+\subsection{9.4}
+对一维伊辛模型，在磁场为零的情况下，由公式(9.2.10)、(9.2.11)，证明在热力学极限下，正则系统的配分函数为
+$$Z_N = 2^N \left( \cosh \frac{J}{kT} \right)^N,$$
+并由此计算自由能、内能、熵与热容。
+
+\newpage
+\subsection{9.5}
+对一维伊辛模型，磁场为零时：
+(i) 若取周期性边界条件，即令 $s_{N+1} = s_1$，其哈密顿量为
+$$H = -J \sum_{i=1}^{N} s_i s_{i+1},$$
+其正则系统的配分函数为
+$$Z_N = \sum_{s_1=\pm 1} \cdots \sum_{s_N=\pm 1} \exp\{K s_1 s_2 + K s_2 s_3 + \cdots + K s_N s_1\} \quad (K \equiv J/kT),$$
+利用恒等式
+$$e^{K s s'} \equiv \cosh K + s s' \sinh K \quad (\text{对 } s, s' \text{ 取 } \pm 1 \text{ 的任何值均成立}),$$
+又利用 $s_i = \pm 1, s_i^2 = 1$，故 $\sum_{s_i = \pm 1} s_i = 0, \sum_{s_i = \pm 1} s_i^2 = 2$，试证明
+$$Z_N = 2^N \left( (\cosh K)^N + (\sinh K)^N \right),$$
+并证明在 $N \to \infty$ 的极限下（即热力学极限下），对 $T > 0$ 的一切温度，有
+$$Z_N = 2^N (\cosh K)^N.$$
+
+(ii) 若取自由边界条件，即 $s_1$ 与 $s_N$ 可以独立取值，此时 $H$ 为
+$$H = -J(s_1 s_2 + s_2 s_3 + \cdots + s_{N-1} s_N),$$
+相应有
+$$Z_N = \sum_{s_1=\pm 1} \cdots \sum_{s_N=\pm 1} \exp\{K s_1 s_2 + K s_2 s_3 + \cdots + K s_{N-1} s_N\}.$$
+证明：
+$$Z_N = 2^N (\cosh K)^{N-1}.$$
+即与周期性边条件下的结果（在热力学极限下）相同。这告诉我们，在热力学极限下，配分函数（因而一切热力学量）与边界条件的选择无关。
+
+\newpage
+\subsection{9.6}
+对伊辛模型，证明磁化率 $\chi$ 与自旋关联函数 $g(i,j) \equiv \langle (s_i - \bar{s}_i)(s_j - \bar{s}_j) \rangle$ 有下列关系（公式（9.4.2））：
+$$\chi = \beta \mu^2 \sum_i \sum_j g(i,j).$$
+
+\newpage
+\subsection{9.7}
+根据§9.4,对伊辛模型:
+(i) 证明在平均场近似下,关联函数 $g(r)$ 的傅里叶变换 $\tilde{g}(k)$ 在临界点 $T = T_c$ 遵从幂律行为
+$$\tilde{g}(k) \sim k^{-2},$$
+因而相应的临界指数 $\eta = 0$;
+(ii) 证明在临界点的邻域,关联函数遵从
+$$g(r) \sim \frac{1}{r} e^{-r/\xi},$$
+其中关联长度 $\xi$ 满足
+$$\xi \sim (T - T_c)^{-\frac{1}{2}},$$
+因而相应的临界指数 $\nu = \frac{1}{2}$.

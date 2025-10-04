@@ -1,0 +1,127 @@
+\section{习题1}
+
+
+
+\newpage
+\subsection{1.1}
+设三个函数 $f, g, h$ 都是二维立变量 $x, y$ 的函数，证明：
+(i) $$ \left( \frac{\partial f}{\partial g} \right)_h = 1 / \left( \frac{\partial g}{\partial f} \right)_h; $$
+(ii) $$ \left( \frac{\partial f}{\partial g} \right)_x = \frac{\partial f}{\partial y} / \frac{\partial g}{\partial y}; $$
+(iii) $$ \left( \frac{\partial y}{\partial x} \right)_f = - \frac{\partial f}{\partial x} / \frac{\partial f}{\partial y}; $$
+(iv) $$ \left( \frac{\partial f}{\partial g} \right)_h \left( \frac{\partial g}{\partial h} \right)_f \left( \frac{\partial h}{\partial f} \right)_g = -1; $$
+(v) $$ \left( \frac{\partial f}{\partial x} \right)_g = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} \left( \frac{\partial y}{\partial x} \right)_g. $$
+
+注：$$ \frac{\partial f}{\partial x} $$ 指 $$ \left( \frac{\partial f}{\partial x} \right)_y, \frac{\partial f}{\partial y} $$ 指 $$ \left( \frac{\partial f}{\partial y} \right)_x $$。凡不指明求偏微商时的不变量的，均指原设函数关系下的偏微商。
+
+\newpage
+\subsection{1.2}
+设四个函数 $f, g, h, k$ 都是二独立变量 $x, y$ 的函数，并以符号 $\frac{\partial (f, g)}{\partial (x, y)}$ 代表其雅可比行列式：
+
+$$\frac{\partial (f, g)}{\partial (x, y)} = \left| \begin{array}{cc}
+\frac{\partial f}{\partial x} & \frac{\partial f}{\partial y} \\
+\frac{\partial g}{\partial x} & \frac{\partial g}{\partial y}
+\end{array} \right| = \frac{\partial f}{\partial x} \frac{\partial g}{\partial y} - \frac{\partial f}{\partial y} \frac{\partial g}{\partial x}$$
+
+证明：
+(i) $\frac{\partial (f, g)}{\partial (h, k)} = \frac{\partial (f, g)}{\partial (x, y)} / \frac{\partial (h, k)}{\partial (x, y)}$;
+(ii) $\frac{\partial (f, g)}{\partial (x, y)} = 1 / \frac{\partial (x, y)}{\partial (f, g)}$;
+(iii) $\left( \frac{\partial f}{\partial g} \right)_h = \frac{\partial (f, h)}{\partial (g, h)}$;
+(iv) $\left( \frac{\partial f}{\partial g} \right)_h = \frac{\partial (f, h)}{\partial (x, y)} / \frac{\partial (g, h)}{\partial (x, y)}$;
+(v) $\left( \frac{\partial f}{\partial x} \right)_g = \frac{\partial (f, g)}{\partial (x, y)} / \frac{\partial g}{\partial y}$
+
+\newpage
+\subsection{1.3}
+证明理想气体的膨胀系数 $\alpha$、压强系数 $\beta$ 及等温压缩系数 $\kappa_T$ 分别为 $\alpha = \beta = 1/T$, $\kappa_T = 1/p$。
+
+\newpage
+\subsection{1.4}
+证明任何一个有两个独立变量 $T, p$ 的 $p-V-T$ 系统，其物态方程可由实验测得的膨胀系数 $\alpha$ 及等温压缩系数 $\kappa_T$ 根据下列积分求得：
+
+$$\ln V = \int (\alpha dT - \kappa_T dp).$$
+
+再应用这个公式和题1.3的结果，求理想气体的物态方程。
+
+\newpage
+\subsection{1.5}
+有一铜块处于0℃和1 atm下，经测定，其膨胀系数和等温压缩系数分别为 $\alpha = 4.85 \times 10^{-5} K^{-1}, \kappa_T = 7.8 \times 10^{-7} (atm)^{-1}, \alpha$ 和 $\kappa_T$ 可近似当成常数。今使铜块加热至10℃，问：
+(i) 压强要增加多少 atm才能维持铜块的体积不变？
+(ii) 若压强增加100 atm，铜块的体积改变多少？
+
+\newpage
+\subsection{1.6}
+已知一理想弹性丝的物态方程为
+$$\mathcal{F} = bT \left( \frac{L}{L_0} - \frac{L_0^2}{L^2} \right),$$
+
+其中 $\mathcal{F}$ 是张力；$L$ 是长度；$L_0$ 是张力为零时的 $L$ 值，$L_0$ 只是温度 $T$ 的函数；$b$ 是常数。定义 (线) 膨胀系数为
+$$\alpha = \frac{1}{L} \left( \frac{\partial L}{\partial T} \right)_\mathcal{F},$$
+
+等温杨氏模量为
+$$ Y = \frac{L}{A} \left( \frac{\partial \mathcal{F}}{\partial L} \right)_T, $$
+
+其中 $A$ 是弹性丝的截面积。证明：
+
+(i) $$ Y = \frac{bT}{A} \left( \frac{L}{L_0} + \frac{2L_0^2}{L^2} \right); $$
+
+(ii) $$ \alpha = \alpha_0 - \frac{1}{T} \frac{L^3}{L_0^3} \frac{L_0^3 - 1}{L_0^3 / L_0^3 + 2}, $$ 其中 $\alpha_0 = \frac{1}{L_0} \frac{dL_0}{dT}. $
+
+\newpage
+\subsection{1.7}
+满足 $pV^n = C$ 的过程称为多方过程，其中 $n$ 和 $C$ 是常数，$n$ 称为多方指数。证明：
+
+(i) 理想气体在多方过程中对外所作的功为
+$$ (p_1 V_1 - p_2 V_2) / (n-1); $$
+
+(ii) 理想气体在多方过程中的热容 $C_{(n)}$ 为
+$$ C_{(n)} = \frac{n - \gamma}{n - 1} C_V, $$
+
+其中 $\gamma = C_p / C_v$;
+
+(iii) 当 $\gamma$ 为常数时，若一理想气体在某一过程中的热容量是常数，则这个过程一定是多方过程。
+
+\newpage
+\subsection{1.8}
+抽成真空的小匣带有活门，打开活门让外面的空气冲入，当压强达到外界压强 $p_0$ 时将活门关上。
+
+(i) 证明小匣内的空气在没有与外界交换热量之前，它的内能 $U$ 与原来在大气中的内能 $U_0$ 之差为 $U - U_0 = p_0 V_0$，其中 $V_0$ 是它原来在大气中的体积。
+
+(ii) 若气体是理想气体且设 $\gamma = C_p / C_v$ 可近似当作常数，求它的温度 $T$ 与体积 $V$。
+
+\newpage
+\subsection{1.9}
+一理想气体 $\gamma = C_p / C_v$ 是温度的函数，求在准静态绝热过程中 $T$ 与 $V$ 的关系和 $T$ 与 $p$ 的关系。这些关系中用到一个函数 $F(T)$，它由下式决定：
+$$ \ln F(T) = \int \frac{dT}{(\gamma - 1)T}. $$
+
+\newpage
+\subsection{1.10}
+利用上题的结果，证明当 $\gamma$ 是温度的函数时，理想气体卡诺循环的效率仍然是 $\eta = 1 - \frac{T_2}{T_1}$。
+
+\newpage
+\subsection{1.11}
+10A的电流通过一个25Ω电阻器，历时1秒。
+(i)若电阻器保持室温27℃不变，求电阻器的熵增加值；
+(ii)电阻器被一绝热亮包起来，其初温为27℃，电阻器的质量为10g，定压比热为$c_p = 0.84J \cdot g^{-1} \cdot K^{-1}$，求电阻器的熵增加值。
+
+\newpage
+\subsection{1.12}
+质量为 $m_1$、温度为 $T_1$ 的水与质量为 $m_2$、温度为 $T_2$ 的水在保持压强不变下混合，设水的定压比热 $c_p$ 可近似看成常数。证明熵增加为
+$$c_p \left( (m_1 + m_2) \ln \frac{m_1 T_1 + m_2 T_2}{m_1 + m_2} - m_1 \ln T_1 - m_2 \ln T_2 \right)$$
+当 $m_1 = m_2 = m$ 时简化为
+$$mc_p \ln \frac{(T_1 + T_2)^2}{4 T_1 T_2}$$
+
+\newpage
+\subsection{1.13}
+物体的初温 $T_1$ 高于热源的温度 $T_2$，令一热机工作于物体和热源之间，直到物体温度降低到 $T_2$ 为止。若热机从物体吸收的热量为 $Q$，试根据熵增加原理证明，此热机所能输出的最大功为
+$$W_{\text{max}} = Q - T_2 (S_1 - S_2),$$
+其中 $S_1 - S_2$ 是物体熵的减少值。
+
+\newpage
+\subsection{1.14}
+有两个相同的物体，初始温度均为 $T_1$。令一致冷机工作于此两物体之间，使其中的一个物体温度降低到 $T_2$。设过程在定压下进行，且物体的 $C_p$ 可当作常数；降温过程中物体也没有相变发生。试根据熵增加原理证明，此过程所需的最小功为
+$$W_{\text{min}} = C_p \left( \frac{T_1^2}{T_2} + T_2 - 2T_1 \right).$$
+
+
+
+
+
+
+

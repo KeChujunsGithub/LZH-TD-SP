@@ -1,0 +1,109 @@
+\section{习题8}
+
+\newpage
+\subsection{8.1}
+设有 $N$ 个粒子组成的系统处于平衡态，满足经典极限条件。
+(i) 试由正则系统的几率分布导出系统微观能量处在 $E$ 与 $E + dE$ 之间的几率 $P(E)dE$（$P(E)$ 为正则系统按能量的几率分布）。
+(ii) 证明使 $P(E)$ 取极大值的能量满足方程
+$$\frac{\Sigma'(E)}{\Sigma'(E)} = \beta,$$
+其中 $\Sigma(E)$ 定义为（见公式(8.4.16)）
+$$\Sigma(E) = \frac{1}{N!h^s} \int_{H \leq E} d\Omega,$$
+$H = H(q_1, \cdots, q_s; p_1, \cdots, p_s)$ 为系统的哈密顿量。
+(iii) 将上述结果用到单原子分子理想气体，证明：
+$$E = \left( \frac{3N}{2} - 1 \right) \frac{1}{\beta} \approx \frac{3}{2} NkT.$$
+这个结果说明什么？
+
+\newpage
+\subsection{8.2}
+有两种不同分子组成的混合理想气体，处于平衡态。设该气体满足经典极限条件；且可以把分子当作质点（即忽略其内部运动自由度）。试用正则系综求该气体的 $p, E, S, \mu_i (i=1,2)$。
+
+\newpage
+\subsection{8.3}
+有一极端相对论性的理想气体，粒子的能谱为 $\varepsilon = cp$ ($p = |p|$, $c$ 为光速)，并满足非简并条件。设粒子的内部运动自由度可以忽略（即可将粒子看成质点）。试用正则系综求该气体的 $p, E, S, \mu, C_v, C_p$。
+
+\newpage
+\subsection{8.4}
+对实际气体，分子之间的相互作用必须考虑。设气体满足经典极限条件。试问气体分子质心的速度分布是否仍然遵从麦克斯韦速度分布（用计算加以论证）？
+
+\newpage
+\subsection{8.5}
+一实际气体处于平衡态。设气体满足经典极限条件，分子之间的相互作用为带吸引力的刚球势（公式（8.6.21））。
+(i) 计算正则系统的配分函数到最低阶修正（相对于理想气体而言）。
+(ii) 证明在此近似下的物态方程为范德瓦耳斯方程，并定出参数 $a$ 与 $b$。
+(iii) 计算内能 $E$ 和熵 $S$，讨论 $a,b$ 对 $E$ 和 $S$ 的影响。
+
+\newpage
+\subsection{8.6}
+设被吸附在液体表面上的分子形成一种二维气体，分子之间相互作用为两两作用的短程力，且只与两分子的质心距离有关。试根据正则系综，证明在第二位力系数的近似下，该气体的物态方程为
+$$pA = NkT \left( 1 + \frac{B_2}{A} \right),$$
+其中 $A$ 为液面的面积，$B_2$ 由下式给出
+$$B_2 = - \frac{N}{2} \int (e^{-\phi(r)/kT} - 1) 2\pi r dr.$$
+
+\newpage
+\subsection{8.7}
+物质磁性的起源是纯量子力学性质的，这一点可以从玻尔-范列文(Bohr-van Leeuwen)定理看出。该定理可以表述为：遵从经典力学和经典统计力学的系统的磁化率严格等于零。
+提示：由公式 $\chi = \left( \frac{\partial M}{\partial \mathcal{H}} \right)_{T,V}$，$M = -\left( \frac{\partial F}{\partial \mathcal{H}} \right)_{T,V}$ 及 $F = - k T \ln Z_N$，只需证明正则系综的配分函数 $Z_N$ 与磁场 $\mathcal{H}$ 无关即可。设矢势为 $A$（磁场由 $A$ 定出），处于磁场中的 $N$ 个带电粒子系统的微观总能量（即系统的哈密顿量）可以表为
+$$E = \sum_{i=1}^{N} \frac{1}{2m} \left( p_i + \frac{e_i}{c} A(r_i) \right)^2 + \Phi(r_1, \cdots , r_N),$$
+其中 $\Phi$ 代表粒子之间的相互作用能。由正则系综出发，在满足经典极限条件下，证明 $Z_N$ 与 $A$ 无关。
+
+\newpage
+\subsection{8.8}
+试用巨正则系综求解题8.2，并与正则系综的结果比较。
+
+\newpage
+\subsection{8.9}
+试用巨正则系综求解题8.3，并与正则系综的结果比较。
+
+\newpage
+\subsection{8.10}
+证明熵的下列公式：
+(i) 对正则系综，$S = -k \sum_s \rho_s \ln \rho_s$，其中 $\rho_s = \frac{1}{Z_N} e^{-\beta E_s}$ 为正则系综的几率分布；
+(ii) 对巨正则系综，$S = -k \sum_{N} \sum_{s} \rho_{Ns} \ln \rho_{Ns}$，其中 $\rho_{Ns} = \frac{1}{\Xi} e^{-\alpha N - \beta E_s}$ 为巨正则系综的几率分布。
+
+\newpage
+\subsection{8.11}
+证明微正则系综的熵可以表为
+$$S = k \ln \Omega (E, V, N),$$
+其中 $\Omega (E, V, N)$ 代表宏观参量 $E, V, N$ 取确定值时系统的量子态总数（见公式(8.3.10)）。提示：把微正则系综看成正则系综在总能量取固定值的特殊情形，按题8.10(i)的公式，再利用
+$$\rho_s = 
+\begin{cases} 
+\frac{1}{\Omega}, & (E_s = E), \\
+0, & (E_s \ne E).
+\end{cases}$$
+
+\newpage
+\subsection{8.12}
+设有一 $N$ 个相互作用可以忽略的粒子（可看成质点）组成的系统，在满足经典极限的条件下，巨正则系综的几率分布为
+$$\rho_N (q_1, \cdots , p_{3N}) d\Omega_N = \frac{1}{\Xi N! h^{3N}} e^{-\alpha N - \beta E_N (q_1, \cdots , p_{3N})} d\Omega_N.$$
+(i) 试证明巨正则系综的总粒子数是 $N$ 的几率为
+$$P(N) = \frac{1}{\Xi} e^{-\alpha N} Z_N,$$
+其中 $Z_N$ 是总粒子数为 $N$ 时的正则系综配分函数。
+(ii) 证明使 $P(N)$ 取极大的总粒子数满足下面的关系：
+$$\alpha = \frac{\partial \ln Z_N}{\partial N}.$$
+（证明时，直接求 $\ln P(N)$ 的极大更方便。）
+(iii) 上式进一步可以化为
+$$N = e^{-a} Z,$$
+其中 $Z$ 为单粒子的配分函数，即
+$$Z = \frac{V}{h^3} \left( \frac{2 \pi m}{\beta} \right)^{3/2}.$$
+上述结果说明什么？
+
+\newpage
+\subsection{8.13}
+在体积为 $V$ 的容器中装有理想气体，处于平衡态。设气体满足经典极限条件，总分子数为 $N$。为简单，将分子当作质点。今考查 $V$ 内一个固定体积 $v$，把 $v$ 内的气体分子看成系统，把周围的气体分子当作大热源和大粒子源。试应用巨正则系综，在 $V \to \infty$，$N \to \infty$，但保持 $N/V$ 常数的极限（即热力学极限）下，证明在体积 $v$ 内有 $n$ 个分子的几率为
+$$P_n = \frac{1}{n!}e^{-\bar{n}}(\bar{n})^n,$$
+其中 $\bar{n} = \frac{v}{V}N$ 为体积 $v$ 内的平均分子数。
+
+\newpage
+\subsection{8.14}
+设有一单原子分子理想气体与其一固体吸附面接触达到平衡。被吸附分子可以在吸附面上作二维运动，其能量为
+$$\frac{1}{2m} (p_x^2 + p_y^2) - \epsilon_0,$$ $-\epsilon_0$ 是束缚能（$\epsilon_0$ 为正常数）。试将被吸附分子看成系统，把外部气体当作大热源和大粒子源，应用巨正则系综计算被吸附分子在单位面积上的平均数。
+（这是题7.13的另一种求解方法。另外还可以比较与§8.9例2的区别。）
+
+\newpage
+\subsection{8.15}
+由巨正则系综证明下列涨落公式：
+$$(\overline{a_\lambda - \bar{a}_\lambda})^2 = \bar{a}_\lambda \left( 1 \pm \frac{\bar{a}_\lambda}{g_\lambda} \right),$$
+其中“$+$”对应理想玻色气体，“$-$”对应理想费米气体。
+注：从上面的结果立即看出，当满足非简并条件，即 $\frac{\bar{a}_\lambda}{g_\lambda} \ll 1$ 时，上式化为
+$$(\overline{a_\lambda - \bar{a}_\lambda})^2 = \bar{a}_\lambda.$$
+由此可见，全同费米子之间的有效排斥（源于泡利不相容原理）使 $\varepsilon_\lambda$ 能级上的粒子占据数的涨落减弱（起抑制作用）；而全同玻色子之间的有效吸引使涨落加强。

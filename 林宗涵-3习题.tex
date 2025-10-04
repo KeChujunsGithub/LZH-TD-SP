@@ -1,0 +1,78 @@
+\section{习题3}
+
+\newpage
+\subsection{3.1}
+利用无穷小的变动，导出下列各平衡判据（假设总粒子数不变，且 $S>0$）：
+(i) 在 $U$ 及 $V$ 不变的情形下，平衡态的 $S$ 极大；
+(ii) 在 $S$ 及 $V$ 不变的情形下，平衡态的 $U$ 极小；
+(iii) 在 $S$ 及 $U$ 不变的情形下，平衡态的 $V$ 极小；
+(iv) 在 $H$ 及 $p$ 不变的情形下，平衡态的 $S$ 极大；
+(v) 在 $S$ 及 $p$ 不变的情形下，平衡态的 $H$ 极小；
+(vi) 在 $T$ 及 $V$ 不变的情形下，平衡态的 $F$ 极小；
+(vii) 在 $F$ 及 $T$ 不变的情形下，平衡态的 $V$ 极小；
+(viii) 在 $T$ 及 $p$ 不变的情形下，平衡态的 $G$ 极小。
+
+\newpage
+\subsection{3.2}
+用内能判据导出热、力学和相变平衡条件。
+
+\newpage
+\subsection{3.3}
+从不等式(3.4.16)出发，选 $T$ 和 $p$ 为独立变量，导出稳定条件：
+$$c_p > 0, \quad \frac{c_p}{T} \left( \frac{\partial v}{\partial p} \right)_T + \left( \frac{\partial v}{\partial T} \right)_p^2 < 0.$$
+
+\newpage
+\subsection{3.4}
+证明:
+(i) $\left( \frac{\partial \mu}{\partial T} \right)_{V,N} = - \left( \frac{\partial S}{\partial N} \right)_{T,V}$;
+(ii) $\left( \frac{\partial \mu}{\partial p} \right)_{T,N} = \left( \frac{\partial V}{\partial N} \right)_{T,p}$;
+(iii) $\left( \frac{\partial U}{\partial N} \right)_{T,V} - \mu = - T \left( \frac{\partial \mu}{\partial T} \right)_{V,N}$.
+
+\newpage
+\subsection{3.5}
+令 $c_\beta^\alpha$ 为 $\alpha$ 相的两相平衡比热，其定义为：在保持 $\alpha$ 相与 $\beta$ 相两相平衡的情形下，1 mol（或 1 g）$\alpha$ 相物质温度升高 1 K 所吸收的热量。
+(i) 根据上述定义，证明：
+$$c_{\beta}^{\alpha} = c_{p}^{\alpha} - \frac{\lambda_{\alpha\beta}}{v^{\alpha} - v^{\beta}} \left( \frac{\partial v^{\alpha}}{\partial T} \right)_{p},$$
+及
+$$c_{\alpha}^{\beta} = c_{p}^{\beta} - \frac{\lambda_{\alpha\beta}}{v^{\alpha} - v^{\beta}} \left( \frac{\partial v^{\beta}}{\partial T} \right)_{p}.$$
+(ii) 证明：
+$$\frac{d\lambda_{\alpha\beta}}{dT} = \frac{\lambda_{\alpha\beta}}{T} + c_{\beta}^{\alpha} - c_{\alpha}^{\beta}.$$
+(iii) 若 $\alpha$ 相是蒸气，并设可近似当作理想气体；$\beta$ 相是液相。证明上述 $c_{\beta}^{\alpha}$ 的公式可以简化为
+$$c_{\beta}^{\alpha} = c_{p}^{\alpha} - \frac{\lambda_{\alpha\beta}}{T}.$$
+由上式可以说明饱和蒸气的两相平衡比热 $c_{\beta}^{\alpha}$ 在什么条件下是负。
+
+\newpage
+\subsection{3.6}
+利用下面的可逆循环过程：
+(a) 在 $T, p$ 下由 $\alpha$ 相转变为 $\beta$ 相；
+(b) 在保持 $\beta$ 相与 $\alpha$ 相平衡的情形下，由 $T, p$ 变为 $T + dT, p + dp$；
+(c) 在 $T + dT, p + dp$ 下由 $\beta$ 相转变为 $\alpha$ 相；
+(d) 在保持 $\alpha$ 相与 $\beta$ 相平衡的情形下，由 $T + dT, p + dp$ 回到 $T, p$ 态。
+
+计算每一步内能的改变和熵的改变，使整个循环过程的改变为零，即
+$$\sum \Delta U = 0 \text{ 和 } \sum \Delta S = 0,$$
+导出 $dp/dT$ 及 $d\lambda/dT$ 的公式：
+$$\frac{dp}{dT} = \frac{\lambda_{\alpha\beta}}{T(v^{\beta} - v^{\alpha})},$$
+$$\frac{d\lambda_{\alpha\beta}}{dT} = \frac{\lambda_{\alpha\beta}}{T} + C_p^{\beta} - C_p^{\alpha}.$$
+（注：原文件此处为 $C_p^a - C_a^a$，根据上下文和公式(7)，应为 $C_p^{\beta} - C_p^{\alpha}$）
+
+\newpage
+\subsection{3.7}
+两相平衡共存系统的 $C_p, \alpha$ 和 $\kappa_T$ 都是无穷大，试说明之。
+
+\newpage
+\subsection{3.8}
+证明范德瓦耳斯气体在 $T<T_c$ 的 $p-v$ 等温线上 的极小点 $M$ 与极大点 $N$ 的轨迹为
+$$pv^3 = a(v-2b).$$
+
+\newpage
+\subsection{3.9}
+从范德瓦耳斯对比物态方程(3.10.14)出发，在临界点的邻域引入无量纲变量
+$$\pi=\tilde{p}-1=(p-p_c)/p_c, \quad \phi=\tilde{v}-1=(v-v_c)/v_c, \quad \tau=\tilde{T}-1=(T-T_c)/T_c,$$
+利用在临界点的邻域 $\pi, \phi$ 和 $\tau$ 都是小量，试由 (3.10.14) 导出 (3.10.18) 式，即由 $\left( \tilde{p} + \frac{3}{\tilde{v}^2} \right)(3\tilde{v}-1)=8\tilde{T}$ 导出
+$$\pi = 4\tau - 6\tau\phi - \frac{3}{2}\phi^3.$$
+（注：原文件物态方程中为 $\frac{3}{\tilde{v}}$，根据范德瓦耳斯对比方程标准形式，应为 $\frac{3}{\tilde{v}^2}$）
+
+\newpage
+\subsection{3.10}
+由 (3.10.18) 式出发，证明范德瓦耳斯气体的临界指数 $\beta = \frac{1}{2}, \delta = 3, \gamma = 1$.

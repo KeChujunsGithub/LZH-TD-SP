@@ -1,0 +1,90 @@
+\section{习题4}
+
+\newpage
+\subsection{4.1}
+若把 $U$ 作为独立变量 $T, V, N_1, \cdots, N_k$ 的函数，证明：
+(i) $u_i = \left( \frac{\partial U}{\partial N_i} \right)_{T,V,\{N_j\ne i\}} + v_i \left( \frac{\partial U}{\partial V} \right)_{T,\{N_i\}}$
+其中 $u_i$ 及 $v_i$ 为偏摩尔内能及偏摩尔体积，即
+$$u_i = \left( \frac{\partial U}{\partial N_i} \right)_{T,p,\{N_j\ne i\}}, \quad v_i = \left( \frac{\partial V}{\partial N_i} \right)_{T,p,\{N_j\ne i\}}$$
+(ii) 此时欧拉定理为
+$$U = \sum N_i \left( \frac{\partial U}{\partial N_i} \right)_{T,V,\{N_j\ne i\}} + V \left( \frac{\partial U}{\partial V} \right)_{T,\{N_i\}}$$
+
+\newpage
+\subsection{4.2}
+证明 $\mu_i(T,p,N_1,\cdots,N_k)$ 是 $N_1,\cdots,N_k$ 的零次齐次函数，并导出
+$$ \sum_j N_j \left( \frac{\partial \mu_i}{\partial N_j} \right)_{T,p,\{N_{j\neq j}\}} = 0 \quad 及 \quad \sum_j N_j \left( \frac{\partial \mu_j}{\partial N_i} \right)_{T,p,\{N_{j\neq j}\}} = 0. $$
+其中 $\{N_{i\neq j}\} = (N_1,\cdots,N_{l-1},N_{l+1},\cdots,N_k)$.
+
+\newpage
+\subsection{4.3}
+证明对多元均匀系，$E = G - F$ 所相应的热力学基本方程为
+$$dE = S dT + p dV + \sum_i N_i d\mu_i,$$
+并证明 $E$ 是以 $T, V, \mu_1, \cdots, \mu_k$ 为独立变量的特性函数。
+
+\newpage
+\subsection{4.4}
+由混合理想气体的吉布斯函数 $G$ 的公式 (4.5.9)，求出 $F$ 作为 $T, V, N_1, \cdots, N_k$ 的函数：
+$$F = \sum_i N_i RT \left\{ \varphi_i(T) - 1 + \ln \frac{N_i RT}{V} \right\}.$$
+
+\newpage
+\subsection{4.5}
+隔板将一绝热容器分成体积为 $V_1$ 与 $V_2$ 的两部分，分别装有 $N_1$ mol 与 $N_2$ mol 的理想气体。设两边气体的温度同为 $T$，压强分别为 $p_1$ 与 $p_2$ ($p_1 \neq p_2$)。今将隔板抽去。
+(i) 求气体混合达到平衡后的压强；
+(ii) 如果两种气体是不同的，计算混合后的熵变；
+(iii) 如果两种气体是相同的，计算混合后的熵变。
+
+\newpage
+\subsection{4.6}
+对于理想气体的化学反应 $\sum \nu_i A_i = 0$，用分压表达的质量作用定律为 $\prod_i p_i^{\nu_i} = K_p$。试由此出发，
+(i) 导出用组元的摩尔浓度 $c_i = N_i / V$ 表达的质量作用定律的形式
+$$\prod_i c_i^{\nu_i} = K_c, \quad K_c \equiv (RT)^{-\nu} K_p \quad (\nu = \sum_i \nu_i),$$
+其中 $K_c$ 称为定容平衡恒量，它只是温度的函数；
+(ii) 导出用组元的摩尔分数 $x_i = N_i / N$ 表达的质量作用定律的形式
+$$\prod_i x_i^{\nu_i} = K, \quad K \equiv p^{-\nu}K_p \quad (\nu = \sum_i \nu_i),$$
+其中 $K$ 称为平衡恒量。一般而言，$K$ 是温度与压强的函数。
+通常 $K_p \neq K_c \neq K$，但对 $\nu = \sum_i \nu_i = 0$ 的化学反应，上述三个平衡恒量相等，即
+$$K_p = K_c = K,$$
+并且仅是温度的函数。
+
+\newpage
+\subsection{4.7}
+碘化氢的分解反应为 $$H_2 + I_2 - 2HI = 0,$$ 实验测得该反应的平衡恒量 K 用下式表示 $$\lg K = -\frac{540.4}{T} + 0.503\lg T - 2.350,$$ 设在最初未发生分解时，除有 $N_0$ mol 的 $HI$ 外，还同时有 $\alpha N_0$ mol 的 $H_2$ (这个问题称为有多余氢存在下 $HI$ 的分解问题)，又设 $I_2$ 不分解。试比较 $\alpha = 0$ 与 $\alpha = 1$ 两种情形在 $T = 500K, 1000K, 1500K$ 时的分解度 $\xi$。
+
+\newpage
+\subsection{4.8}
+在某些星体的大气层中存在下列金属蒸气的热电离过程：
+$$A \Longrightarrow A^+ + e^- ,$$
+其中 $A, A^+$ 与 $e^-$ 分别代表中性原子、正离子和电子。设这三种组元构成的气体可以当作混合理想气体。又已知上述反应相应的定压平衡恒量可表为
+$$K_p = CT^{5/2}e^{-W/RT},$$
+其中 $C$ 为常数，$W$ 为电离能，$R$ 为气体常数。试求电离度 $\alpha$ 与温度 $T$ 及总压强 $p$ 的关系。
+电离度 $\alpha$ 的定义为：
+$$\alpha = \frac{\text{反应达到平衡时已电离原子 } A \text{ 的摩尔数}}{\text{初始时原子 } A \text{ 的摩尔数}}.$$
+注：由于 $A \longrightarrow A^+ + e$ (也称为一次电离)的电离能远小于二次电离 $A^+ \longrightarrow A^{++} + e$ 及更高次电离的电离能，作为近似，可以忽略二次及高次电离过程。
+
+\newpage
+\subsection{4.9}
+令 $Q = -\Delta H$ 代表等温等压下化学反应过程所放出的热量, 由
+$$\left( \frac{\partial Q}{\partial T} \right)_p = - \frac{\partial}{\partial T} \Delta H = - \Delta \left( \frac{\partial H}{\partial T} \right)_p = - \Delta C_p,$$
+求积分即得
+$$Q = Q_0 - \int_{0}^{T} \Delta C_p dT.$$
+(i) 利用原书公式(4.7.6)
+$$Q = A - T \frac{\partial A}{\partial T} = - T^2 \frac{\partial A}{\partial T},$$
+在保持压强不变下求积分, 证明
+$$A = Q_0 - T \int_{0}^{T} \frac{Q - Q_0}{T^2} dT.$$
+(ii) 已知在 $T \approx 0$ 时, 非金属固体有 $C_p = \alpha T^3$, 金属固体有 $C_p = \beta T (\alpha, \beta 为常数).$ 试证明 $Q$ 与 $A$ 两个量与 $T$ 构成的函数关系曲线在 $T \approx 0$ 时位于公共水平切线不同的两侧, 数学上就是要证明在 $T \approx 0$ 时有
+$$\frac{\partial Q}{\partial T} \approx - b \frac{\partial A}{\partial T},$$
+其中 $b$ 为正常数.
+
+\newpage
+\subsection{4.10}
+大多数宏观系统的熵在 $T \rightarrow 0$ 时以幂律形式趋于零，即熵在 $T \rightarrow 0$ 时可以表达为 $S = aT^n(n>0)$，其中 $a$ 是体积 $V$ 或压强 $p$ 的函数。试根据能斯特定理，证明：
+(i) 当 $T \rightarrow 0$ 时，$C_v, C_p, \left( \frac{\partial V}{\partial T} \right)_p, \left( \frac{\partial p}{\partial T} \right)_V$ 均以与 $S$ 相同的幂次 $n$ 趋于零。
+(ii) 当 $T \rightarrow 0$ 时 $\left( \frac{\partial V}{\partial p} \right)_T$ 趋于有限值。
+(iii) $C_p - C_v$ 比 $n$ 更高的幂次趋于零。
+(iv) $\left( \frac{\partial T}{\partial p} \right)_S$ 随 $T \rightarrow 0$ 而趋于零。由此可知，当 $T \rightarrow 0$ 时，要使温度发生有限改变所需的压强变化为无穷大。
+
+\newpage
+\subsection{4.11}
+设在一定压强 $p$ 下，由固相转变到液相的相变温度为 $T'$，相变潜热为 $\lambda' = T'(s'-s), s'$ 是 1 mol 液体的熵。证明在 $T > T'$ 时 1 mol 液体的绝对熵为
+$$s' = \int_{T'}^{T} c_p' \frac{dT}{T} + \frac{\lambda'}{T'} + \int_{0}^{T} c_p \frac{dT}{T},$$
+其中 $c_p'$ 与 $c_p$ 分别代表 1 mol 物质在液相与固相的定压比热，积分是在固定压强 $p$ 下计算的。

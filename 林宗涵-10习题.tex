@@ -1,0 +1,59 @@
+\section{习题10}
+
+\newpage
+\subsection{10.1}
+玻尔兹曼积分微分方程(10.1.32)的适用条件是什么？在推导中这些条件用在什么地方？
+
+\newpage
+\subsection{10.2}
+按照推导元碰撞数(10.1.22)同样考虑，一个速度为 $v_1$、质量为 $m_1$ 的分子在单位时间内与速度处于 $d^3v_2$ 内、质量为 $m_2$ 的分子在立体角元 $d\Omega$ 内的碰撞数为
+$$d\theta_{12} = f_2 d^3v_2 d^2_{12}g_{12}\cos\theta d\Omega.$$
+(i) 由上式,证明一个速度为 $v_1$ 的 $m_1$ 分子在单位时间内与 $m_2$ 分子的碰撞数为
+$$\theta_{12} = \int f_2 d^3v_2 d^2_{12}g_{12}\cos\theta d\Omega = \pi d^2_{12} \int f_2 g_{12} d^3v_2.$$
+(ii) $\theta_{12}$ 与 $m_1$ 分子的速度 $v_1$ 有关,对 $v_1$ 的平均为
+$$\bar{\theta}_{12} = \frac{1}{n_1} \int \theta_{12} f_1 d^3v_1.$$
+$\bar{\theta}_{12}$ 代表一个 $m_1$ 分子在单位时间内与 $m_2$ 分子的平均碰撞数,现设气体处于平衡态,已知
+$$f_1 = n_1 \left( \frac{m_1}{2\pi kT} \right)^{3/2} e^{-\frac{m_1 v_1^2}{2kT}}, \quad f_2 = n_2 \left( \frac{m_2}{2\pi kT} \right)^{3/2} e^{-\frac{m_2 v_2^2}{2kT}},$$
+于是得
+$$\bar{\theta}_{12} = \pi d^2_{12} \frac{n_2 (m_1 m_2)^{3/2}}{(2\pi kT)^3} \int e^{-\frac{m_1 v_1^2 + m_2 v_2^2}{2kT}} g_{12} d^3v_1 d^3v_2.$$
+以两分子的质心速度 $v_c$ 和相对速度 $v_r$ 为独立变量,$v_c$ 与 $v_r$ 的定义为
+$$(m_1 + m_2) v_c = m_1 v_1 + m_2 v_2, \quad v_r = v_2 - v_1.$$
+证明：
+$$m_1 v_1^2 + m_2 v_2^2 = (m_1 + m_2) v_c^2 + \frac{m_1 m_2}{m_1 + m_2} v_r^2,$$
+$$d^3v_1 d^3v_2 = d^3v_c d^3v_r.$$
+最后证明：
+$$\bar{\theta}_{12} = \left( 1 + \frac{m_1}{m_2} \right)^{\frac{1}{2}} \pi n_2 d_{12}^2 \bar{v}_1 \quad (\bar{v}_1 = \sqrt{\frac{8kT}{\pi m_1}}).$$
+(iii) 若气体中只有一种分子，则上式化为
+$$\bar{\Theta} = \sqrt{2}\pi nd^2 \bar{v}.$$
+$\bar{\Theta}$ 代表处于平衡态的气体中一个分子在单位时间内的平均碰撞数。试用上式估计在 $0^\circ C$ 与 $1 atm$ 下，一个氧分子的平均碰撞数。已知氧分子的 $d=3.62 \times 10^{-8} cm, \frac{k}{m} = \frac{R}{m^+}, m^+=32$ 为氧的分子量，$R$ 为气体常数。
+
+\newpage
+\subsection{10.3}
+由细致平衡条件（10.2.18）出发，导出平衡态的分布函数（10.2.25）。
+
+\newpage
+\subsection{10.4}
+对满足经典极限条件下的理想气体,证明平衡态下熵与H函数的关系为公式(10.2.34),即
+$$S = -k H + 常数.$$
+
+\newpage
+\subsection{10.5}
+对于经典稀薄气体,定义熵密度 $s(r,t)$,熵流密度 $J_s$,和熵产生率 $\theta$如下(见§10.3):
+$$s(r,t) = -k \int f \ln f d^3 v,$$
+$$J_s = -k \int v f \ln f d^3 v,$$
+$$\theta = -k \int (1+\ln f) \left( \frac{\partial f}{\partial t} \right)_c d^3 v.$$
+试证明：
+$$\frac{\partial s}{\partial t} + \nabla \cdot J_s = \theta,$$
+其中 $\theta \geq 0$。
+
+\newpage
+\subsection{10.6}
+§10.4已证明，简并气体的细致平衡条件为公式(10.4.17)，即
+$$\frac{f_1}{1+\eta f_1} \cdot \frac{f_2}{1+\eta f_2} = \frac{f_1'}{1+\eta f_1'} \cdot \frac{f_2'}{1+\eta f_2'},$$
+其中 $\eta = +1$对应于理想玻色气体，$\eta = -1$对应于理想费米气体。试由上述细致平衡条件出发，导出平衡态下的玻色分布与费米分布。
+
+\newpage
+\subsection{10.7}
+考虑半导体中的低密度传导电子，设温度与密度均匀，在 x 方向加一均匀、弱静电场，并设电流已达到稳恒状态。由于假设传导电子的数密度低，满足非简并条件，故其零阶局域平衡分布为麦克斯韦分布，即
+$$f^{(0)} (\mathbf{v}) = n \left( \frac{m}{2 \pi k T} \right)^{3/2} e^{-\frac{mv^2}{2kT}},$$
+为简单，设驰豫时间 $\tau$ 为常数（即忽略 $\tau$ 随速度的变化）。试用驰豫时间近似计算电流及电导率。

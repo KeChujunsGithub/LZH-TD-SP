@@ -1,0 +1,227 @@
+\section{习题7}
+
+\newpage
+\subsection{7.1}
+设有一处于平衡态的孤立系，它由彼此处于热接触的两种定域粒子系统组成。这两个系统彼此之间可以交换能量，但不能交换粒子。令 $\{a_{\lambda}\}, \{a'_{\lambda}\}; N, N', E, E'$ 分别代表两个系统的分布、总粒子数与总能量。试证明两个系统的粒子的最可几分布分别为
+$$\bar{a}_{\lambda} = g_{\lambda} e^{-\alpha - \beta \varepsilon_{\lambda}},$$
+$$\bar{a}'_{\lambda} = g'_{\lambda} e^{- \alpha' - \beta \varepsilon'_{\lambda}}.$$
+注意两个分布的参数 $\alpha$ 与 $\alpha'$ 不同，但 $\beta$ 相同。
+
+\newpage
+\subsection{7.2}
+设有 $N$ 个可分辨的粒子组成的理想气体，处于体积为 $V$ 的容器内，达到平衡态。设重力的影响可以忽略。今考虑 $V$ 内的一个指定的小体积 $v$。
+
+(i) 证明在体积 $v$ 内找到 $m$ 个粒子的几率遵从二项式分布
+$$P_N(m) = \frac{N!}{m!(N-m)!} \left( \frac{v}{V} \right)^m \left( 1 - \frac{v}{V} \right)^{N-m}$$
+
+(ii) 证明 $P_N(m)$ 满足归一化条件，即
+$$\sum_{m=0}^N P_N(m) = 1.$$
+
+(iii) 直接用 $P_N(m)$ 计算 $m$ 的平均值
+$$\bar{m} = \sum_{m=0}^N m P_N(m),$$
+证明 $\bar{m} = \frac{v}{V} N$。
+
+(iv) 证明当 $N \gg 1, v \ll V$ 时，上述二项式分布化为泊松分布：
+$$P_N(m) = \frac{(\bar{m})^m e^{-\bar{m}}}{m!}.$$
+并证明使 $P_N(m)$ 取极大的 $m$ 值（即 $m$ 的最可几值）$\tilde{m} = \bar{m}$。
+
+\newpage
+\subsection{7.3}
+对于处于平衡态下由近独立的定域子系组成的系统：
+(i) 导出能级 $\varepsilon_\lambda$ 的粒子占据数 $a_\lambda$ 为 $a_\lambda = \bar{a}_\lambda + \delta a_\lambda$,即 $a_\lambda$ 与其最可几值 $\bar{a}_\lambda$ 有 $\delta a_\lambda$ 的偏差时的几率为
+$$P_N(\{\bar{a}_\lambda + \delta a_\lambda\}) = C \exp\left[ -\frac{1}{2} \sum_{\lambda} \left( \frac{\delta a_\lambda}{\bar{a}_\lambda} \right)^2 \bar{a}_\lambda \right],$$
+其中 $C$ 为常数。
+(ii) 令 $x = \delta a_\lambda / \bar{a}_\lambda$,证明上述公式化为
+$$P_N(x) = C e^{-\frac{N}{2}x^2} = \sqrt{\frac{N}{2\pi}} e^{-\frac{N}{2}x^2},$$
+$C$ 由归一化条件 $\int_{-\infty}^{\infty} P_N(x) dx = 1$ 定出。
+(iii) 若令 $\xi = \sqrt{\frac{N}{2}} x$,则 $P_N(x)$ 在 $\pm x_0$ 的范围内的积分为
+$$\int_{-x_0}^{x_0} P_N(x) dx = \frac{1}{\sqrt{\pi}} \int_{-\xi_0}^{\xi_0} e^{-\xi^2} d\xi = \text{erf}(\xi_0),$$
+其中 $\text{erf}(\xi)$ 是误差函数，它的渐近展开式为
+$$\text{erf}(\xi) = 1 - \frac{e^{-\xi^2}}{\xi \sqrt{\pi}} \left( 1 - \frac{1}{2\xi^2} + \frac{1 \cdot 3}{(2\xi^2)^2} - \frac{1 \cdot 3 \cdot 5}{(2\xi^2)^3} + \cdots \right).$$
+若取 $N = 10^{20}$,相对偏差的范围 $x_0 = 10^{-5}$,试估计相应的 $\text{erf}(\xi_0)$ 值,这一结果说明什么？
+
+\newpage
+\subsection{7.4}
+设有 $N$ 个定域粒子组成的系统，粒子之间相互作用很弱，可以忽略。设粒子只有三个非简并能级，能量分别为 $-\varepsilon, 0, \varepsilon$。系统处于平衡态，温度为 $T$。试求：
+(i) $T = 0$ 时的熵 $S$。
+(ii) $S$ 的最大值。
+(iii) $S$ 的最小值。
+(iv) 内能 $E$；并求 $T \to 0$ 与 $T \to \infty$ 的极限。
+(v) 热容 $C(T)$；并求 $T \to 0$ 与 $T \to \infty$ 的极限。
+(vi) $$\int_{0}^{\infty} C(T) \frac{dT}{T}$$
+
+\newpage
+\subsection{7.5}
+计算爱因斯坦固体模型的熵。
+
+\newpage
+\subsection{7.6}
+根据普朗克的热辐射理论，频率为 $\nu$ 的振子的配分函数 $Z(\nu)$ 为 $Z(\nu) = (1 - e^{-\beta h\nu})^{-1}$（原书公式(7.5.22)）。又知处在频率间隔 $(\nu, \nu + d\nu)$ 内的振子自由度数为 $g(\nu)d\nu = \frac{8\pi V}{c^3}\nu^2 d\nu$。定域子系熵的公式(7.4.15)现在应改为
+$$S = k \int_0^\infty g(\nu)d\nu \left\{ \ln Z(\nu) - \beta \frac{\partial}{\partial \beta} \ln Z(\nu) \right\},$$
+试利用上述求出热辐射的熵。
+
+\newpage
+\subsection{7.7}
+自旋为 $\hbar/2$ 的粒子处于磁场 $\mathcal{H}$ 中，粒子的磁矩为 $\mu$，磁矩与磁场方向平行或反平行所相应的能量分别为 $-\mu\mathcal{H}$ 与 $\mu\mathcal{H}$。今设有 $N$ 个这样的定域粒子处于磁场 $\mathcal{H}$ 中，整个系统处于温度为 $T$ 的平衡态，粒子之间的相互作用很弱，可以忽略。
+(i) 求子系的配分函数 $Z$。
+(ii) 求系统的自由能 $F$，熵 $S$，内能 $E$ 和热容 $C_{\mathcal{H}}$。
+(iii) 证明总磁矩的平均值为 $\overline{M} = N\mu\tanh\left(\frac{\mu\mathcal{H}}{kT}\right)$。
+(iv) 证明在高温弱场下，亦即 $\frac{\mu\mathcal{H}}{kT} \ll 1$ 时：$\overline{M} = \frac{N\mu^2}{kT}\mathcal{H}$；磁化率 $\chi = \frac{\partial (\overline{M}/V)}{\partial \mathcal{H}} = \frac{n\mu^2}{kT}$；在低温强场下，亦即 $\frac{\mu\mathcal{H}}{kT} \gg 1$ 时：$\overline{M} = N\mu$；$\chi = 0$。
+(v) 以 $\frac{S}{Nk}, \frac{E}{N\mu\mathcal{H}}, \frac{\overline{M}}{N\mu}, \frac{C_{\mathcal{H}}}{Nk}$ 为纵坐标，以 $\frac{kT}{\mu\mathcal{H}}$ 为横坐标，在 $\frac{kT}{\mu\mathcal{H}}$ 从 0 到 6 的范围内，取 0.5 为间隔作图，从中可以看出诸量的变化行为。
+
+\newpage
+\subsection{7.8}
+$N$个原子在空间规则地排列起来形成点阵结构（理想晶体）。由于热涨落，原子可以离开原来的点阵位置进入点阵的间隙位置，这种空位-间隙原子称为弗仑克尔(Frenkel)缺陷(见图)。令$w$代表将原子从原来的位置移到间隙位置所需要的能量，当$kT<<w$时，缺陷数$n$满足$1<<n<<N$，因而缺陷之间的相互影响可以忽略。原子可以进入的间隙位置数$N'$和$N$有相同的数量级。试证明在温度$T$满足$kT<<w$的平衡态下，缺陷的平均数$\bar{n}$满足下列关系：
+$$\frac{\bar{n}^2}{(N-\bar{n})(N'-\bar{n})} = e^{-w/kT},$$
+或
+$$\bar{n} \approx \sqrt{NN'} e^{-w/2kT}.$$
+
+\newpage
+\subsection{7.9}
+在有 $N$ 个原子的理想晶体中, 如果把 $n$ 个原子 ($1 \ll n \ll N$) 从晶体内部的点阵位置上移到晶体表面的点阵位置上, 从而形成具有 $n$ 个肖特基(Schottky)缺陷的非理想晶体(见图). 令 $w$ 代表把一个原子从晶体内部的点阵位置移到晶体表面所需的能量. 试用求解题7.8相同的方法, 证明在 $kT \ll w$ 的温度下, 平衡态 $\bar{n}$ 的平均值满足
+$$\frac{\bar{n}}{N+\bar{n}} = e^{-w/kT}$$
+或
+$$\bar{n} \approx Ne^{-w/kT}.$$
+
+\newpage
+\subsection{7.10}
+试根据麦克斯韦速度分布律求两个分子的相对速度 $\vec{v}_r = \vec{v}_2 - \vec{v}_1$ 和相对速率 $v_r = |\vec{v}_r|$ 的分布，并求相对速率的平均值 $\bar{v}_r$。
+
+\newpage
+\subsection{7.11}
+设容器内的理想气体处于平衡态，并满足经典极限条件，试证明单位时间内碰到器壁单位面积上的平均分子数为
+$$\Gamma = \frac{1}{4} n\bar{v},$$
+其中 $n$ 为气体分子的数密度，$\bar{v}$ 为平均速率。
+
+\newpage
+\subsection{7.12}
+设容器内的理想气体处于平衡态，并满足经典极限条件，今在容器壁上开一小孔，分子将从小孔中跑出。试求跑出的分子束中，分子的平均速率 $\overline{v}_{\text{出}}$ 和平均动能 $\overline{\varepsilon}_{\text{出}}$。并与容器内分子相应的 $\bar{v}$ 与 $\overline{\varepsilon}$ 比较，结果说明了什么？
+
+\newpage
+\subsection{7.13}
+有一单原子分子理想气体与一吸附面接触，被吸附分子与外部气体分子相比，其能量中多一项吸引势能$-\varepsilon_0$。该被吸附的分子可以在吸附面上自由运动，形成二维理想气体，又设外部气体与被吸附的二维气体均满足经典极限条件。已知外部气体的温度为 $T$, 压强为 $p$. 试求这两部分气体达到平衡时，二维气体单位面积内的分子数。
+
+\newpage
+\subsection{7.14}
+有一双原子分子理想气体，设分子具有电偶极矩 $d_0$，它在电场 $\vec{\mathcal{E}}$ ($\vec{\mathcal{E}}$ 的方向取为 z 轴)中的转动能的经典表达式为
+$$\varepsilon^r = \frac{1}{2I} \left( p_{\theta}^2 + \frac{1}{\sin^2 \theta} p_{\varphi}^2 \right) - d_0 \mathcal{E} \cos \theta,$$
+其中 $\theta$ 为偶极矩 $d_0$ 与电场 $\vec{\mathcal{E}}$ 之间的夹角。当温度不太低时，该气体满足经典极限条件。
+(i) 求分子质心速度的 $x$ 分量处在 $v_x$ 与 $v_x + dv_x$ 之间的几率。
+(ii) 求分子的偶极矩 $d_0$ 与电场 $\vec{\mathcal{E}}$ 之间的夹角处于 $\theta$ 与 $\theta + d\theta$ 之间的几率。
+(iii) 证明气体的极化强度等于
+$$\mathcal{P} = n d_0 \overline{\cos \theta} = n d_0 \left( \frac{e^x + e^{-x}}{e^x - e^{-x}} - \frac{1}{x} \right),$$
+其中 $n$ 为单位体积内的分子数，$x = \beta d_0 \mathcal{E} = d_0 \mathcal{E} / kT$。
+(iv) 证明转动配分函数为
+$$Z^r = \frac{8 \pi^2 I}{h^2 \beta} \frac{\sinh(\beta d_0 \mathcal{E})}{\beta d_0 \mathcal{E}}.$$
+(v) 证明极化强度 $\mathcal{P}$ 可以表为
+$$\mathcal{P} = \frac{n}{\beta} \frac{\partial}{\partial \mathcal{E}} \ln Z^r,$$
+由此求得与 (iii) 相同的结果。
+(vi) 当 $x \ll 1$ 时（即弱场、高温），证明
+$$\mathcal{P} = \chi \mathcal{E}, \quad \chi = \frac{n d_0^2}{3 k T},$$
+$\chi$ 为极化率。
+
+\newpage
+\subsection{7.15}
+粒子的态密度 $D(\varepsilon)$ 定义为：$D(\varepsilon) d\varepsilon$ 代表粒子的能量处于 $\varepsilon$ 与 $\varepsilon + d\varepsilon$ 之间的量子态数（见 §7.15）。这里只考虑粒子的平动自由度所对应的态密度。
+(i) 设粒子的能谱（即能量与动量的关系）是非相对论性的，试分别对下列三种空间维数，求相应的态密度 $D(\varepsilon)$：
+(a) 粒子局限在体积为 $V$ 的三维空间内运动，
+$$\varepsilon = \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2);$$
+(b) 粒子局限在面积为 $A$ 的二维平面内运动，
+$$\varepsilon = \frac{1}{2m} (p_x^2 + p_y^2);$$
+(c) 粒子局限在长度为 $L$ 的一维空间内运动，
+$$\varepsilon = \frac{p_x^2}{2m}.$$
+(ii) 设粒子的能谱是极端相对论性的，即 $\varepsilon = cp, p = |\vec{p}|$，试对空间维数分别为 (a) 三维、(b) 二维、(c) 一维三种情况，求相应的 $D(\varepsilon)$。
+
+\newpage
+\subsection{7.16}
+证明：
+(i) 若粒子平动能谱是非相对论性的，则 $pV=\frac{2}{3}E$；
+(ii) 若粒子平动能谱是极端相对论性的，则 $pV=\frac{1}{3}E$。
+以上结论对理想玻色气体和理想费米气体均成立（当然对满足非简并条件下的理想气体也成立）。
+
+\newpage
+\subsection{7.17}
+设有 $N$ 个相同的近独立的粒子组成的系统，处于平衡态。
+(i) 若粒子是定域的，证明其熵可表达为
+$$S = -k \sum_s \{ f_s \ln f_s - f_s \} + k \ln N! ,$$
+其中 $f_s = e^{-\alpha - \beta \varepsilon_s} = \frac{N}{Z} e^{-\beta \varepsilon_s}$ 代表粒子在其量子态 $s$ 上的平均占据数，$\sum_s$ 是对粒子的所有量子态求和。
+并证明上述与定域子系熵的另外两个表达式 (7.4.15) 及 (7.4.19) 相等。
+(ii) 若粒子是非定域的，证明其熵可表达为
+$$S = -k \sum_s \{ f_s \ln f_s - \eta (1 + \eta f_s) \ln (1 + \eta f_s) \},$$
+其中 $f_s = (e^{\alpha + \beta \varepsilon_s} - \eta)^{-1}$ 代表粒子在其量子态 $s$ 上的平均占据数，$\eta = +1$ 代表玻色子，$\eta = -1$ 代表费米子。
+并证明上述与理想玻色气体及理想费米气体的熵的另外两个表达式(7.10.13)及(7.10.33)相等。
+(iii) 当非定域子系满足非简并条件时，即 $e^\alpha \gg 1$，或 $f_s \ll 1$，证明(ii)中的公式化为
+$$S = -k \sum_s \{f_s \ln f_s - f_s\}.$$
+上式对玻色子与费米子无区别。
+
+\newpage
+\subsection{7.18}
+设有 $N$ 个自旋为 0 的全同玻色子组成的理想玻色气体，被约束在三维各向同性谐振子势阱
+$$V(x,y,z) = \frac{m\omega^{2}}{2} (x^{2} + y^{2} + z^{2})$$
+中，粒子能量可取值为
+$$\varepsilon (n_{1}, n_{2}, n_{3}) = \left( n_{1} + \frac{1}{2} \right) \hbar \omega + \left( n_{2} + \frac{1}{2} \right) \hbar \omega + \left( n_{3} + \frac{1}{2} \right) \hbar \omega,$$
+$$n_{i} = 0, 1, 2, \cdots \quad (i = 1, 2, 3),$$
+当粒子能量 $\varepsilon \gg \hbar\omega$ 时，$n_i$ 可以当作连续变量，并可忽略零点能。证明这时粒子的态密度 $D(\varepsilon)$ 为
+$$D(\varepsilon) = \frac{\varepsilon^2}{2(\hbar\omega)^3}.$$
+
+\newpage
+\subsection{7.19}
+证明题7.18所述约束在三维各向同性谐振子势阱中的理想玻色气体的玻色-爱因斯坦凝聚温度 $T_c$ 为
+$$k T_c = \frac{\hbar \omega N^{1/3}}{[\zeta(3)]^{1/3}},$$
+其中 $\zeta(3) = \frac{1}{\Gamma(3)} \int_{0}^{\infty} \frac{x^2 dx}{e^x - 1}$（见原书附录B2).
+
+\newpage
+\subsection{7.20}
+对题7.18的系统，当 $T < T_c$ 时，证明全部激发态上占据的粒子总数为
+$$\overline{N}_{exc} = N \left( \frac{T}{T_c} \right)^3,$$
+而凝聚在基态上的粒子数为
+$$\overline{N}_0 = N \left[ 1 - \left( \frac{T}{T_c} \right)^3 \right].$$
+
+\newpage
+\subsection{7.21}
+处理空容中的平衡热辐射有两种不同的观点，即波的观点（§7.5）与粒子的观点（§7.17）。在量子理论的基础上，两种观点都可以得到正确结果。试比较这两种观点在处理上的不同之处，以及两者的对应关系。
+
+\newpage
+\subsection{7.22}
+(i) 计算温度为 $T$ 的平衡热辐射中,光子能量处在 $\varepsilon$ 与 $\varepsilon + d\varepsilon$ 之间的平均光子数。
+(ii) 计算单位体积内的平均光子数,并估计(a) $T = 1000 \, K$, (b) $T = 3 \, K$ (相当于宇宙背景辐射)所对应的光子数密度值。
+(iii) 设空容有一小孔,计算单位时间内从小孔单位面积辐射出去的光子所携带的能量。
+
+\newpage
+\subsection{7.23}
+对理想费米气体：
+(i) 利用声速公式 $a^2 = \left(\frac{\partial p}{\partial \rho}\right)_S$, 证明 $T = 0 K$ 时的声速为 $a = v_F/\sqrt{3}$, 其中 $v_F$ 为费米速度 ($v_F = p_F/m$)。
+(ii) 证明 $T = 0 K$ 时，等温压缩系数与绝热压缩系数相等，满足
+$$\kappa_T = \kappa_S = \frac{3}{2} \frac{1}{n\mu_0}, \quad 其中 \mu_0 = \varepsilon_F$$
+为费米能，亦即零温下的化学势。
+
+\newpage
+\subsection{7.24}
+若粒子能谱是极端相对论性的，试求具有这种能谱的理想费米气体在零温时的费米能，粒子的平均能量和压强。
+
+\newpage
+\subsection{7.25}
+设有局限在二维平面上运动的自由电子气，其单位面积内的电子数为 $n$。
+(i) 计算 $T=0 \, K$ 时的化学势 $\mu_0$，内能 $E_0$ 和压强 $p_0$。
+(ii) 计算 $T \neq 0 \, K$，但满足 $\frac{kT}{\mu_0} \ll 1$ 情形下的 $\mu, E, S$ 和 $p$。
+
+\newpage
+\subsection{7.26}
+当温度高达 $kT \sim mc^2 (mc^2 \sim 0.5 \, \text{MeV}$ 为电子的静止质量所对应的能量),可以发生正、负电子对的产生与湮没过程:
+$$e^- + e^+ \longleftrightarrow \gamma \quad (\gamma \, \text{代表一个或几个光子}).$$
+这时正、负电子的数目不再是固定不变的,而需由化学平衡条件确定.由于光子气体的化学势为0,于是有
+$$\mu^- + \mu^+ = 0.$$
+现考虑 $kT \gg mc^2$ 的高温,这时正、负电子将大量产生,以致初始时的 $e^-$ 密度 $n_0$ 可以忽略不计,即
+$$n^- = n^+ + n_0 \approx n^+,$$
+因而 $\mu^- = \mu^+$ ($e^-$ 与 $e^+$ 具有相同的质量,自旋,它们的化学势只由粒子数密度决定,令 $n^- = n^+$,故 $\mu^- = \mu^+$ ).再利用上述化学平衡条件,即得 $\mu^- = \mu^+ = 0.$ 试在上述条件下:
+(i) 计算正、负电子数密度 $n^- = n^+ = ?$
+(ii) 计算正、负电子的能量密度(即单位体积内的平均能量) $u^- = u^+ = ?$
+(iii) 计算正、负电子的能量密度与相同温度下光子能量密度之比.
+
+\newpage
+\subsection{7.27}
+铁磁固体低温下的元激发称为自旋波或磁波子(magnon)，它是一种玻色型的元激发(或准粒子)，其能谱为
+$$\varepsilon = \alpha p^\gamma,$$
+其中 $p = |\vec{p}|, \alpha$ 和 $\gamma$ 均为常数。
+(i) 求这种准粒子的态密度 $D(\varepsilon)$。
+(ii) 已知在足够低的温度下（使 $\frac{\varepsilon_{\max}}{kT} \gg 1$, $\varepsilon_{\max}$ 是类似德拜频率的截止能量，它决定了准粒子的总自由度数；此处无需知道细节），热容 $C \sim T^{3/2}$。试由此确定 $\gamma$。

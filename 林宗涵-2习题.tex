@@ -1,0 +1,166 @@
+\section{习题2}
+
+\newpage
+\subsection{2.1}
+(i) 证明：$$\frac{\partial (T, S)}{\partial (p, V)} = \frac{\partial T \partial S}{\partial p \partial V} - \frac{\partial T \partial S}{\partial V \partial p} = 1.$$
+
+(ii) 根据雅可比行列式的性质，由上式得 $$\frac{\partial (T, S)}{\partial (x, y)} = \frac{\partial (p, V)}{\partial (x, y)},$$ 其中 $x, y$ 为任意两个独立变量。由此导出麦克斯韦关系。
+
+\newpage
+\subsection{2.2}
+证明下列关系：
+
+(i) $\left( \frac{\partial U}{\partial p} \right)_V = - T \left( \frac{\partial V}{\partial T} \right)_S$;
+
+(ii) $\left( \frac{\partial U}{\partial V} \right)_P = T \left( \frac{\partial p}{\partial T} \right)_S - p$;
+
+(iii) $\left( \frac{\partial T}{\partial V} \right)_U = p \left( \frac{\partial T}{\partial U} \right)_V - T \left( \frac{\partial p}{\partial U} \right)_V$;
+
+(iv) $\left( \frac{\partial T}{\partial p} \right)_H = T \left( \frac{\partial V}{\partial H} \right)_P - V \left( \frac{\partial T}{\partial H} \right)_P$;
+
+(v) $\left( \frac{\partial T}{\partial S} \right)_H = \frac{T}{C_p} - \frac{T^2}{V} \left( \frac{\partial V}{\partial H} \right)_P$.
+
+\newpage
+\subsection{2.3}
+对 $p$-$V$-$T$ 系统，证明
+
+$$\frac{\kappa_T}{\kappa_S} = \frac{C_p}{C_v},$$
+
+其中
+
+$$\kappa_T \equiv -\frac{1}{V} \left( \frac{\partial V}{\partial p} \right)_T, \quad \kappa_S \equiv -\frac{1}{V} \left( \frac{\partial V}{\partial p} \right)_S$$
+
+分别代表等温与绝热压缩系数。
+
+\newpage
+\subsection{2.4}
+设一物体的物态方程具有下列形式
+
+$$p = f(V) T,$$
+
+证明其内能与体积无关。
+
+\newpage
+\subsection{2.5}
+(i) 证明
+
+$$\left( \frac{\partial C_V}{\partial V} \right)_T = T \left( \frac{\partial^2 p}{\partial T^2} \right)_V; \quad \left( \frac{\partial C_p}{\partial p} \right)_T = -T \left( \frac{\partial^2 V}{\partial T^2} \right)_p.$$
+
+并由此导出
+
+$$C_V = C_{V_0} + T \int_{V_0}^V \left( \frac{\partial^2 p}{\partial T^2} \right)_V dV,$$
+$$C_p = C_{p_0} - T \int_{p_0}^p \left( \frac{\partial^2 V}{\partial T^2} \right)_p dp.$$
+
+其中 $C_{V_0}$ 与 $C_{p_0}$ 分别代表体积为 $V_0$ 时的定容热容与压强为 $p_0$ 时的定压热容，它们都是温度的函数。
+
+(ii) 根据以上 $C_V, C_p$ 两式证明，理想气体的 $C_V$ 与 $C_p$ 只是温度的函数。
+
+(iii) 证明范德瓦耳斯气体的 $C_V$ 只是温度的函数，与体积无关。
+
+\newpage
+\subsection{2.6}
+由测量一气体的膨胀系数与等温压缩系数得
+
+$$\left( \frac{\partial v}{\partial T} \right)_p = \frac{R}{p} + \frac{a}{T^2}, \quad \left( \frac{\partial v}{\partial p} \right)_T = -Tf(p),$$
+
+其中 $v$ 为摩尔体积，$a$ 为常数，$f(p)$ 是压强的函数。又已知在低压下 1 mol 该气体的定压比热 $c_p = \frac{5}{2} R$。证明：
+
+(i) $f(p) = \frac{R}{p^2}$;
+
+(ii) 物态方程为 $pv = RT - \frac{ap}{T}$;
+
+(iii) $c_p = \frac{5}{2} R + \frac{2ap}{T^2}$.
+
+\newpage
+\subsection{2.7}
+一弹簧在恒温下的张力 $X$ 与其伸长 $x$ 成正比，即 $X = Ax$，比例系数 $A$ 是温度的函数。忽略弹簧的热膨胀，当 $x$ 增加 $dx$ 时，外力所作的微功为 $dW = Xdx$。试证明弹簧的自由能、熵和内能的表达式为
+
+$$F(T, x) = F(T, 0) + \frac{1}{2} Ax^2,$$
+$$S(T, x) = S(T, 0) - \frac{x^2}{2} \frac{dA}{dT},$$
+$$U(T, x) = U(T, 0) + \frac{1}{2} \left( A - T \frac{dA}{dT} \right)x^2.$$
+
+\newpage
+\subsection{2.8}
+计算以热辐射为工作物质的可逆卡诺循环的效率。
+
+\newpage
+\subsection{2.9}
+一橡皮带遵从物态方程 $X = A(L) T$，其中 $X$ 为张力，$L$ 为长度，$A(L)$ 为 $L$ 的函数，且 $A(L) > 0$。
+
+(i) 证明这种橡皮带的内能只是温度的函数；
+
+(ii) 证明在等温条件下，其熵随长度增加而减少；
+
+(iii) 把橡皮带绝热拉长，问其温度是升高还是降低？
+
+(iv) 在保持张力不变下使橡皮带升高温度，问它将伸长还是缩短？
+
+提示：证明需用到平衡的稳定条件 $C_L = T \left( \frac{\partial S}{\partial T} \right)_L > 0$；$\left( \frac{\partial L}{\partial X} \right)_T > 0$（详见原书 §3.4）。
+
+\newpage
+\subsection{2.10}
+一均匀各向同性的顺磁固体，设其体积变化可以忽略，并取单位体积：
+
+(i) 证明
+
+$$\chi_T / \chi_s = C_{x} / C_{x},$$
+
+其中 $\chi_T = \left( \frac{\partial M}{\partial x} \right)_T$ 与 $\chi_s = \left( \frac{\partial M}{\partial x} \right)_S$ 分别代表等温与绝热磁化率。
+
+(ii) 计算 $C_{x} - C_{x}$。
+
+(iii) 在完成 (i)、(ii) 计算后，对 (i)、(ii) 的结论，还可以试一下用类比的方法，从 $p$-$V$-$T$ 系统的相应公式
+
+$$\frac{\kappa_T}{\kappa_s} = \frac{C_p}{C_v}, \quad C_p - C_v = T \left( \frac{\partial p}{\partial T} \right)_v \left( \frac{\partial V}{\partial T} \right)_p,$$
+
+按对应关系
+
+$$-p \leftrightarrow x, \quad V \leftrightarrow \mu_0 M$$
+
+得到。上述对应关系可以从 $p$-$V$-$T$ 系统的热力学基本微分方程
+
+$$dU = TdS - pdV$$
+
+与顺磁固体（在上述简化条件下）的基本微分方程
+
+$$dU = TdS + \mu_0 x dM$$
+
+的比较中看出。
+
+\newpage
+\subsection{2.11}
+一均匀各向同性的顺磁固体，忽略体积变化，并取单位体积。已知：(a) 它满足居里定律，即 $M = \frac{C}{T} x$（$C$ 为正常数）；(b) $C_0 = C_{M}|_{M=0} = b/T^{2}$（$b$ 为正常数，$T$ 不太低时）。
+
+(i) 证明 $\left( \frac{\partial C_{M}}{\partial M} \right)_{T} = 0$，亦即 $C_{M}$ 与 $M$ 无关；
+
+(ii) 求 $C_{x} - C_{x}$；
+
+(iii) 求以 $(T, x)$ 为独立变量的熵的表达式；
+
+(iv) 求以 $(x, M)$ 为变量的可逆绝热过程方程；
+
+(v) 求等温磁化过程（磁场从 $0 \rightarrow x$）吸收的热量；
+
+(vi) 求绝热去磁过程（磁场从 $x_0 \rightarrow 0$）的温度变化；
+
+(vii) 计算以此顺磁固体为工作物质的可逆卡诺循环的效率。
+
+\newpage
+\subsection{2.12}
+设一物系统具有下列性质：
+
+(a) 在保持温度 $T_0$ 不变下，体积由 $V_0$ 可逆膨胀到 $V$ 时系统对外所作的功为
+
+$$W = RT_0 \ln \frac{V}{V_0};$$
+
+(b) 系统的熵为
+
+$$S = R \left( \frac{V_0}{V} \right) \left( \frac{T}{T_0} \right)^a,$$
+
+其中 $V_0, T_0, \alpha$ 为常数，$R$ 为气体常数。
+
+求：(i) 系统的自由能；
+
+(ii) 物态方程；
+
+(iii) $T \neq T_0$ 时从 $V_1 \to V_2$ 的任意等温过程系统对外所作的功。

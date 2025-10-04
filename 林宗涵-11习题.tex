@@ -1,0 +1,86 @@
+\section{习题11}
+
+\newpage
+\subsection{11.1}
+由热力学量涨落几率公式(11.1.16)出发,以 $\Delta p$ 与 $\Delta S$ 为独立变量,证明:
+$$W = W_{\text{max}} \exp \left\{ \frac{1}{2kT} \left( \frac{\partial V}{\partial p} \right)_S (\Delta p)^2 - \frac{1}{2kC_p} (\Delta S)^2 \right\}.$$
+进而证明:
+$$\overline{\Delta S \Delta p} = 0,$$
+$$\overline{(\Delta S)^2} = kC_p,$$
+$$\overline{(\Delta p)^2} = -kT \left( \frac{\partial p}{\partial V} \right)_S = \frac{kT}{V\kappa_s}.$$
+
+\newpage
+\subsection{11.2}
+由热力学量涨落几率公式(11.1.19)求得的 $\overline{(\Delta T)^2}$, $\overline{\Delta T \Delta V}$ 及 $\overline{(\Delta V)^2}$ 出发，证明：
+$$\overline{\Delta T \Delta S} = kT,$$
+$$\overline{\Delta p \Delta V} = -kT,$$
+$$\overline{\Delta S \Delta V} = kT \left( \frac{\partial V}{\partial T} \right)_p,$$
+$$\overline{\Delta T \Delta p} = \frac{kT^2}{C_v} \left( \frac{\partial p}{\partial T} \right)_v,$$
+$$\frac{\overline{(\Delta N)^2}}{N^2} = \frac{kT}{V}\kappa_T.$$
+
+\newpage
+\subsection{11.3}
+§ 11.2 关于流体的密度涨落关联函数的理论，若采用 (11.2.15) 的近似（也称为平均场近似）
+$$\Delta f = f - \bar{f} = \frac{a}{2} (n - \bar{n})^2 + \frac{b}{2} (\nabla n)^2,$$
+试证明密度-密度关联函数 $C(r)$ 及其傅里叶变换 $\tilde{C}(q)$ 为
+$$C(r) = \frac{kT}{4\pi b} \frac{1}{r} e^{-r/\xi} \sim \frac{1}{r} e^{-r/\xi}, \quad \tilde{C}(q) = \frac{kT}{a + bq^2}.$$
+
+\newpage
+\subsection{11.4}
+根据上题所求得的 $C(r)$ 与 $\tilde{C}(q)$ 的结果，如果认为它们在临界点的邻域也成立，证明相应的临界指数 $\nu = \frac{1}{2}, \eta = 0$。
+
+注：这是从涨落关联函数计算平均场近似下临界指数 $\nu$ 与 $\eta$ 的方法，用类似的方法可以求出铁磁体的自旋密度涨落的关联函数在临界点邻域的行为，从而确定临界指数 $\nu$ 与 $\eta$。
+
+\newpage
+\subsection{11.5}
+试由布朗粒子的朗之万方程(11.3.1)出发,导出布朗粒子位移平方的平均值的下列关系:
+$$\overline{x^2} = 2Dt; \quad D = \frac{kT}{\alpha}.$$
+
+\newpage
+\subsection{11.6}
+考虑大群布朗粒子的运动,证明转移几率(由(11.3.11)定义)
+$$f(\xi, \tau) = \frac{1}{2\sqrt{\pi D\tau}} e^{-\xi^2 / 4D\tau},$$
+且有
+$$\overline{\xi^2} = 2D\tau.$$
+
+\newpage
+\subsection{11.7}
+对一维无规行走问题：
+(i) 导出经过 N 步后，离出发点距离为 $x = m\lambda$ ($\lambda$ 为步长)的几率为 (11.3.25)，即
+$$P_N(m) = \frac{N!}{\left[ \frac{1}{2}(N+m) \right]! \left[ \frac{1}{2}(N-m) \right]!} \left( \frac{1}{2} \right)^N.$$
+(ii) 当 $N\gg|m|\gg1$ 时，证明上式化为
+$$P_N(m) = \sqrt{\frac{2}{\pi N}} e^{-m^2/2N}.$$
+(iii) 当用于描述一维布朗粒子的运动时，证明上式进一步化为 (11.3.27)，即
+$$P(x,t)dx = \frac{dx}{2\sqrt{\pi Dt}} \exp \left( -\frac{x^2}{4Dt} \right),$$
+$P(x,t)dx$ 代表 t 时刻布朗粒子位于 x 与 x+dx 之间的几率。
+
+\newpage
+\subsection{11.8}
+设随机变量 $B(t)$ 代表布朗粒子所受的瞬时涨落力（也可以是它的瞬时速度或瞬时位置），证明当布朗粒子周围的液体处于平衡态时，时间自关联函数
+$$K_{BB}(t_1,t_2) \equiv \overline{B(t_1)B(t_2)}$$
+满足 (11.4.2)—(11.4.6) 诸性质。
+
+\newpage
+\subsection{11.9}
+推导公式(11.4.21)，说明推导中假设涨落力的时间关联函数 $K_{AA}(s)$ 取 $\delta$ 函数近似的根据。
+
+\newpage
+\subsection{11.10}
+对于布朗运动，在对涨落力的时间关联函数 $K_{AA}(s)$ 取 $\delta$ 函数近似下，证明涨落-耗散定理（11.5.2）及其等价形式（11.5.3）和（11.5.5）。
+
+\newpage
+\subsection{11.11}
+在对布朗粒子所受的涨落力的时间关联函数 $K_{AA}(s)$ 取 $\delta$ 函数近似下，导出布朗粒子速度的时间关联函数 $K_{uu}(s) = \frac{kT}{m} e^{-|s|/\tau}$ (即公式(11.5.17))，并进而证明布朗运动中涨落-耗散定理的另一种表达形式(11.5.6)。
+
+\newpage
+\subsection{11.12}
+考虑由电阻 $R$ 和电感 $L$ 串联构成的电路,设电路中没有外加电动势,整个电路处于平衡态,温度为 $T$. 今将电路中的电流涨落看成一种特殊的布朗运动,其朗之万方程为(公式(11.6.4))
+$$L \frac{dI(t)}{dt} = -RI(t) + V(t),$$
+在对电压涨落的时间关联函数 $K_{VV}(s)$ 取 $\delta$ 函数近似下,试(i)证明涨落电流的时间关联函数满足公式(11.6.16),即
+$$K_{II}(s) = \frac{kT}{L} e^{-|s|/\tau},$$
+其中 $\tau = (R/L)^{-1}$ 代表 $K_{II}(s)$ 的关联时间.
+(ii) 证明涨落-耗散定理的公式(11.6.17).
+
+\newpage
+\subsection{11.13}
+利用时间关联函数谱分解的性质,导出关于电路中热噪声的奈奎斯特定理(11.6.3).
